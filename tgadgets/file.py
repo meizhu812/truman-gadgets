@@ -14,7 +14,7 @@ import os
 def get_files_list(*, path: str, file_init: str, file_ext: str) -> list:
     print(">>> Listing files in folder:\n" +
           "--> [{}]\n".format(path) +
-          "--> INIT:[{}]\t".format(file_init) + "EXT:[{}]\n--|".format(file_ext))
+          "--> [INIT]:'{}'\t".format(file_init) + "[EXT]:'{}'\n--|".format(file_ext))
     files_list = []
     for (dir_name, dirs_here, files_here) in os.walk(path):
         for file in files_here:

@@ -27,20 +27,20 @@ class Timer:
         self.process = process
         self.action = action
         self.resume_time = self.start_time = time()
-        print("\n>>> [%s...]\n" % self.process)
-        print("%02i> [%s...]" % (self.phase, self.action))
+        print("\n>>> [%s...]" % self.process)
+        print("--|\n%02i> [%s...]" % (self.phase, self.action))
 
     def switch(self, new_action: str):
-        print('%02i# [%s Completed in %s seconds.]\n' % (self.phase, self.action, self.elapsed))
+        print('%02i# [%s Completed in %s seconds.]' % (self.phase, self.action, self.elapsed))
         self.phase += 1
         self.action = new_action
-        print("%02i> [%s...]" % (self.phase, self.action))
+        print("--|\n%02i> [%s...]" % (self.phase, self.action))
         self.resume_time = time()
 
     def stop(self):
         self.stop_time = time()
-        print('%02i# [%s Completed in %s seconds.]\n' % (self.phase, self.action, self.elapsed))
-        print('### [%s Completed in %s seconds.]\n' % (self.process, self.elapsed_total))
+        print('%02i# [%s Completed in %s seconds.]' % (self.phase, self.action, self.elapsed))
+        print('--|\n### [%s Completed in %s seconds.]\n' % (self.process, self.elapsed_total))
 
     @property
     def elapsed(self) -> str:
