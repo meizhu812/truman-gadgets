@@ -1,7 +1,8 @@
 # truman-gadgets
 light useful gadgets in daily projects
-
-## 2019-01-02
+## 2019-01-13
+### v1.0.2 output fix
+## 2019-01-12
 ### v1.0.1 fix output consistency
 #### example output:
 ```
