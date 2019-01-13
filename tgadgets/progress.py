@@ -1,7 +1,10 @@
 # coding=utf-8
 """
-
-v1.0.0
+v1.0.2 n/a
+---
+v1.0.1 output consistency fix
+---
+v1.0.0 Initial package
 
 Gadgets for simple progress tracking in data processing programs,including:
 1. Timer:
