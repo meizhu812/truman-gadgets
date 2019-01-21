@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='truman-gadgets',
-    version='1.0.2',
+    version='2.0.0',
     packages=['tgadgets'],
     url='',
     license='GPL-3.0',
